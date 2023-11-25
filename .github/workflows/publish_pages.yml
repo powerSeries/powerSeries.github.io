@@ -9,4 +9,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - run: cd ${{ github.workspace }}
+      - run: ls
+      - run: cd ..
+      - run: ls
       - run: npm run deploy
