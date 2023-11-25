@@ -8,6 +8,9 @@ jobs:
       if: github.event.pull_request.merged == true
       runs-on: ubuntu-latest
       steps:
+        - uses: de-vri-es/setup-git-credentials@v2
+          with:
+            credentials: ${{secrets.GIT_CREDENTIAL}}
         - uses: actions/checkout@v2
         - run: npm install react-scripts
         - run: npm install
