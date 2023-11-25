@@ -13,6 +13,8 @@ jobs:
         - uses: de-vri-es/setup-git-credentials@v2
           with:
             credentials: ${{secrets.GIT_CREDENTIAL}}
+        - run: git config --global user.email ${{ secrets.GIT_EMAIL }}
+        - run: git config --global user.name ${{ secrets.GIT_USERNAME }}
         - uses: actions/checkout@v2
         - run: npm install react-scripts
         - run: npm install
