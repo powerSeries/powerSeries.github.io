@@ -9,7 +9,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <p>Hello, this came from an action!!</p>
+        <p>Hello, this came from an action using build directory!!</p>
         <a
           className="App-link"
           href="https://reactjs.org"
