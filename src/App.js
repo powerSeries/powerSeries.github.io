@@ -1,12 +1,24 @@
 import './App.css';
 
+import Navbar from './components/navbar/navbar';
+
+import Contact from "./pages/contact";
+import Project from "./pages/project";
+import Home from "./pages/home";
+import { Route, Routes } from 'react-router-dom';
+
 function App() {
   return (
-    <div className="App">
-      <h1 className='text-3xl font-bold underline text-teal-600'>
-        Hello world!
-      </h1>
-    </div>
+    <>
+      <Navbar />
+      <div className="container">
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/project' element={<Project/>}/>
+        </Routes>
+      </div>
+    </>
   );
 }
 
