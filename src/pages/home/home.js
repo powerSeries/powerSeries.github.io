@@ -1,24 +1,23 @@
 // Sections
 import profile_photo from '../../assets/gojo.jfif';
 import AboutMe from './about';
+import Social from './social';
 
 function Home() {
   return (
     <div className="grid grid-rows-3 ">
       <div className="bg-gray-200 border-2 h-full w-full flex-wrap content-around grid grid-cols-2">
-        <div className="border-2 text-black">
-          <h1 className="text-5xl text-center padding">Jose Sotolongo</h1>
+        <div className="border-2 text-black flex items-center justify-center">
+          <h1 className="text-center padding text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Jose Sotolongo</h1>
         </div>
         <div className="border-2 text-black">
-          <img src={profile_photo} alt="ProfilePhoto"/>
+          <img src={profile_photo} alt="ProfilePhoto" className='w-full h-auto'/>
         </div>
       </div>
 
       <AboutMe/>
 
-      <div className="bg-gray-700 text-white h-full w-full">
-        Home
-      </div>
+      <Social/>
 
     </div>
   );
