@@ -1,6 +1,6 @@
 function AboutMe() {
     return (
-        <div className="bg-gray-500 border-2 h-full w-full ">
+        <div className="bg-gray-500 h-full w-full ">
             {/* Header Section */}
             <div className='w-full flex justify-center items-center h-1/6'>
                 <h1 className='text-5xl text'>About Me!</h1>
