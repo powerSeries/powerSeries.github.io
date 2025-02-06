@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Social() {
     return(
-    <footer className="">
+    <div className="">
         <div className="bg-gray-500 h-auto w-full flex justify-center items-center gap-48">
             <div>
                 <a href="https://github.com/powerSeries">
@@ -15,7 +15,7 @@ function Social() {
                 </a>
             </div>
         </div>
-    </footer>
+    </div>
     
     );
     
