@@ -12,8 +12,7 @@ export default function Navbar() {
         <Link
           key={title}
           to={url}
-          className="px-3 py-2 text-white font-medium hover:bg-zinc-500 hover:text-slate-900"
-        >
+          className="px-3 py-2 text-white font-medium hover:bg-zinc-500 hover:text-slate-900">
           {title}
         </Link>
       ))}
