@@ -16,7 +16,7 @@ export default function Navbar() {
             <Link
               key={title}
               to={url}
-              className="lg:px-5 sm:px-3 text-white font-medium hover:bg-zinc-500 hover:text-slate-900 lg:justify-items-end">
+              className="lg:px-5 sm:px-2 text-white font-medium hover:bg-zinc-500 hover:text-slate-900 lg:justify-items-end">
               {title}
             </Link>
           ))}
